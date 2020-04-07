@@ -23,7 +23,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-app.get('/', (req, res) =>{res.json(database.users)})
+app.get('/', (req, res) =>{res.json('It is working')})
 
 app.post('/login', (req, res) => {login.handleLogin(req, res, db , bcrypt)})
 
